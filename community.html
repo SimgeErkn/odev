@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topluluk | DİGEM-PATH</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Outfit:wght@300;400&display=swap"
+        rel="stylesheet">
+    <style>
+        .community-layout {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .categories ul {
+            list-style: none;
+        }
+
+        .categories li {
+            padding: 1rem;
+            background: var(--glass);
+            margin-bottom: 0.5rem;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .categories li:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .post-card {
+            margin-bottom: 1.5rem;
+        }
+
+        .post-meta {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+        }
+
+        .tag {
+            background: var(--accent);
+            color: var(--primary-dark);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo" style="display: flex; align-items: center; gap: 1rem;">
+                <img src="logo.png.png" alt="DİGEM Logo 1" style="height: 50px; display: block;">
+                <img src="logo2.png.png.png" alt="DİGEM Logo 2" style="height: 50px; display: block;">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="path.html">Yol Haritası</a></li>
+                <li><a href="scenarios.html">Vakalar</a></li>
+                <li><a href="faq.html">Destek</a></li>
+                <li><a href="community.html" class="active">Topluluk</a></li>
+                <li><a href="contact.html">İletişim</a></li>
+            </ul>
+            <a href="experience.html" class="btn btn-outline">Deneyim Kazanı</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Deneyim Paylaşım Alanı</h1>
+        <div class="community-layout">
+            <aside class="categories">
+                <h3>Kategoriler</h3>
+                <ul>
+                    <li>🚀 Başarı Hikayeleri</li>
+                    <li>💻 Teknik Yardımlaşma</li>
+                    <li>📚 Çalışma Grupları</li>
+                    <li>📢 Sektör Haberleri</li>
+                </ul>
+            </aside>
+
+            <section class="feed">
+                <div class="glass-card post-card">
+                    <div class="post-meta"><span class="tag">BAŞARI</span> • 2 saat önce • <strong>Ayşe Y.</strong>
+                    </div>
+                    <h4>İlk staj mülakatımı başarıyla tamamladım!</h4>
+                    <p>DİGEM'deki vaka analizleri mülakatta çok işime yaradı. Özellikle kriz yönetimi sorularına
+                        verdiğim cevaplar çok beğenildi.</p>
+                    <div style="margin-top: 1rem;">
+                        <button class="btn btn-outline" style="padding: 0.4rem 1rem; font-size: 0.8rem;">👏 Tebrik Et
+                            (14)</button>
+                        <button class="btn btn-outline" style="padding: 0.4rem 1rem; font-size: 0.8rem;">💬 Yorum
+                            Yap</button>
+                    </div>
+                </div>
+
+                <div class="glass-card post-card">
+                    <div class="post-meta"><span class="tag">YARDIM</span> • 5 saat önce • <strong>Mehmet K.</strong>
+                    </div>
+                    <h4>Veri Analizi 3. modül hakkında bir sorum var...</h4>
+                    <p>Pivot tablolar ile çalışırken veri görselleştirme kısmında takıldım. Daha önce bu modülü bitiren
+                        var mı?</p>
+                    <div style="margin-top: 1rem;">
+                        <button class="btn btn-outline" style="padding: 0.4rem 1rem; font-size: 0.8rem;">👍 Katılıyorum
+                            (3)</button>
+                        <button class="btn btn-outline" style="padding: 0.4rem 1rem; font-size: 0.8rem;">💬
+                            Cevapla</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="container" style="margin-top: 4rem; padding: 2rem 0; border-top: 1px solid var(--glass-border);">
+        <p>&copy; 2026 DİGEM-PATH. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+
+</html>
